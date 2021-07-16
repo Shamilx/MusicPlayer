@@ -1,0 +1,70 @@
+﻿<Window x:Class="MusicPlayer.MVVM.View.MusicListManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:MusicPlayer.MVVM.View"
+        mc:Ignorable="d"
+        Title="Manager" Height="600" Width="500">
+
+    <Grid DataContext="{StaticResource Vm}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Foreground="Wheat" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Height="25"
+                   FontSize="16" FontFamily="Consolas">
+            Music List
+        </TextBlock>
+        <ListView
+            Grid.Column="0"
+            ItemsSource="{Binding SongList}"
+            BorderBrush="White"
+            Foreground="Azure"
+            SelectedItem="{Binding SelectedMusicItem}"
+            Height="500"
+            Width="280"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button
+                Foreground="Wheat"
+                Style="{StaticResource MaterialDesignIconButton}"
+                Command="{Binding PlaySelectedMusicCommand}"
+                ToolTip="Play">
+                <materialDesign:PackIcon
+                    Kind="Play" />
+            </Button>
+            
+            <Button
+                Foreground="Wheat"
+                Style="{StaticResource MaterialDesignIconButton}"
+                Command="{Binding AddMusicCommand}"
+                ToolTip="Add">
+                <materialDesign:PackIcon
+                    Kind="Plus" />
+            </Button>
+
+            <Button
+                Foreground="Wheat"
+                Style="{StaticResource MaterialDesignIconButton}"
+                Command="{Binding DeleteMusicCommand}"
+                ToolTip="Delete">
+                <materialDesign:PackIcon
+                    Kind="Delete" />
+            </Button>
+
+        </StackPanel>
+    </Grid>
+
+    <Window.Background>
+        <LinearGradientBrush Opacity="0.4">
+            <GradientStop Color="Purple" />
+            <GradientStop Color="MidnightBlue" Offset="0.6" />
+        </LinearGradientBrush>
+    </Window.Background>
+
+</Window>

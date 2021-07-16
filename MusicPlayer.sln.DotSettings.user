@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005CUser_005C_002Evscode_005Cextensions_005Cms_002Ddotnettools_002Ecsharp_002D1_002E23_002E12_005C_002Erazor_005CSystem_002EText_002EJson_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=49DB4E7E_002DDD2D_002D47E2_002DAF38_002DE2C90482B321_002Fd_003AMVVM_002Fd_003AViewModel_002Ff_003APlayerVM_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\User\Desktop\MusicPlayer\packages\WpfAnimatedGif.2.0.0\lib\net40\WpfAnimatedGif.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
